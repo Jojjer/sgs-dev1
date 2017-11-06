@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 92
+  controlID: 72
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 50
+  controlID: 10
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 93
+  controlID: 124
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,9 +392,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -26.873833, y: -9.708187, z: -6.695832}
+    m_Target: {x: -3.4179306, y: -1.3591309, z: 1.7927833}
     speed: 2
-    m_Value: {x: -26.873833, y: -9.708187, z: -6.695832}
+    m_Value: {x: -3.4179306, y: -1.3591309, z: 1.7927833}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -417,13 +417,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.1644238, y: -0.7435782, z: 0.19812621, w: 0.6170919}
+    m_Target: {x: -0.21043229, y: 0.7434715, z: -0.27299112, w: -0.5731005}
     speed: 2
-    m_Value: {x: 0.1644238, y: -0.7435782, z: 0.19812621, w: 0.6170919}
+    m_Value: {x: -0.2104323, y: 0.74347156, z: -0.27299115, w: -0.57310057}
   m_Size:
-    m_Target: 86.6006
+    m_Target: 31.006811
     speed: 2
-    m_Value: 86.6006
+    m_Value: 31.006811
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -463,9 +463,9 @@ MonoBehaviour:
     height: 452
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ec530000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 04faffff00000000
+    m_ExpandedIDs: a6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -526,19 +526,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Materials
   m_ViewMode: 1
   m_StartGridSize: 77
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Materials
   m_LastFoldersGridSize: 77
   m_LastProjectPath: E:\sgs-dev1\Shady Game Studios first game
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: da280000
-    m_LastClickedID: 10458
-    m_ExpandedIDs: 4828000000ca9a3bffffff7f
+    m_SelectedIDs: d8270000
+    m_LastClickedID: 10200
+    m_ExpandedIDs: 000000008427000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -566,7 +566,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000084270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
