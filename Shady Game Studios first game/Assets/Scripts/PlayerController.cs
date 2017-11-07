@@ -5,14 +5,22 @@ using UnityEngine.Networking;
 
 public class PlayerController : NetworkBehaviour {
 
-	// Use this for initialization
-	void Start ()
+
+    private GameObject shades;
+    private MeshRenderer myMeshRenderer;
+    private MeshRenderer childMeshRenderer;
+
+    // Use this for initialization
+    void Start ()
     {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
+        myMeshRenderer = GetComponent<MeshRenderer>();
+        shades = transform.Find("Cube").gameObject;
+        childMeshRenderer = shades.GetComponent<MeshRenderer>();
+
+    }
+
+    // Update is called once per frame
+    void Update ()
     {
         if (!isLocalPlayer)
         {
@@ -23,5 +31,10 @@ public class PlayerController : NetworkBehaviour {
 
         transform.Rotate(0, x, 0);
         transform.Translate(0, 0, z);
-	}
+        if (!isServer)
+        {
+            myMeshRenderer.enabled = false;
+            childMeshRenderer.enabled = false;            
+        }
+    }
 }
