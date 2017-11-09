@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33518409380286546}
   - component: {fileID: 136751501976614010}
   - component: {fileID: 23382838622130242}
-  - component: {fileID: 114988595124362148}
   - component: {fileID: 114779715134942486}
   - component: {fileID: 114027513488440100}
+  - component: {fileID: 195172862616902322}
+  - component: {fileID: 114830524679963674}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -279,7 +280,7 @@ MonoBehaviour:
   attacker: {fileID: 0}
   currentWallHealth: 0
   currentAttackerHealth: 0
---- !u!114 &114988595124362148
+--- !u!114 &114830524679963674
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -287,9 +288,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1462589881108674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0443a08da84358949a04dc6bbda9227d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0489d4b575f3424438f402ddc128c248, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walktodoor: {fileID: 4860831289201964, guid: 6dbc726f2f0b57d46abf62d9392d9476, type: 2}
 --- !u!136 &136245527073355680
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -329,3 +331,24 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!195 &195172862616902322
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462589881108674}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
