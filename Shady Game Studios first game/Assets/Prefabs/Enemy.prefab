@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114988595124362148}
   - component: {fileID: 114779715134942486}
   - component: {fileID: 114027513488440100}
+  - component: {fileID: 114352707995003444}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -264,6 +265,27 @@ MonoBehaviour:
     i15: 126
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 0
+--- !u!114 &114352707995003444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1462589881108674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 1
+  m_SendInterval: 0.033333335
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!114 &114779715134942486
 MonoBehaviour:
   m_ObjectHideFlags: 1
