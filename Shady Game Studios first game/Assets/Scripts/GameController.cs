@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        for(int i = 0; i < 20; i++)
+        for(int i = 0; i < 10; i++)
         {
             Vector3 position = new Vector3(Random.Range(-20.0f, 20.0f), 2f, Random.Range(70.0f, 50.0f));
 
