@@ -10,42 +10,49 @@ public class Health : NetworkBehaviour {
     public const int maxWallHealth = 1000;
     public const int maxAttackerHealth = 50;
     [SyncVar]
-    public int currentWallHealth = maxWallHealth;
-    public int currentAttackerHealth = maxAttackerHealth;
+    public int currentWallHealth = maxAttackerHealth;
+    public int currentAttackerHealth = maxWallHealth;
 
+    // Use this for initialization
+    void Start ()
+    {
 
-	// Use this for initialization
-	void Start () {
-
-	}
+    }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update ()
+    {
+        Debug.Log(currentAttackerHealth);
+        Debug.Log(currentWallHealth);
+        
+        if (currentAttackerHealth == 0)
+        {
+            Debug.Log("Attacker died!");
+            //Destroy(attacker);
+        }
+        if (currentWallHealth == 0)
+        {
+            Debug.Log("Wall died!");
+            //Destroy(wall);
+        }
+    }
     
-    void takeDamage(int damage, string target)
+    public void DamageWall(int damage)
     {
         if (!isServer)
         {
             return;
         }
-        switch (target)
+
+        currentWallHealth -= damage;
+    }
+    public void DamageAttacker(int damage)
+    {
+        if (!isServer)
         {
-            case "wall":
-                currentWallHealth -= damage;
-                break;
-            case "attacker":
-                currentAttackerHealth -= damage;
-                break;
+            return;
         }
-        if (currentAttackerHealth <= 0)
-        {
-            Destroy(attacker);
-        }
-        if (currentWallHealth <= 0)
-        {
-            Destroy(wall);
-        }
+
+        currentAttackerHealth -= damage;
     }
 }

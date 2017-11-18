@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 0}
-  attacker: {fileID: 0}
+  attacker: {fileID: 1462589881108674}
   currentWallHealth: 0
   currentAttackerHealth: 0
 --- !u!114 &114988595124362148
