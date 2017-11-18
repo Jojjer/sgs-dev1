@@ -36,6 +36,7 @@ public class GameController : NetworkBehaviour
         }
 	}
 	
+<<<<<<< HEAD
 	// Update is called once per frame
 	void Update ()
 >>>>>>> Fredrik
@@ -43,3 +44,7 @@ public class GameController : NetworkBehaviour
 
     }
 }
+=======
+
+}
+>>>>>>> Andreas
