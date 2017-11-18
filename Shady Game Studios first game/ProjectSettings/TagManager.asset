@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Server
   - MobilePlayer
+  - MobileUI
   layers:
   - Default
   - TransparentFX
